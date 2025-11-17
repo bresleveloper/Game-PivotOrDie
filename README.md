@@ -20,6 +20,10 @@ created with claude
 1. add source links to every fact (and fix if needed) (jobs nets, avg earnings act + inflation adapted)
 2. make prologue more about the average man (not "biggest horse stable", but horseshoe maker)
 3. translate to hebrew
+4. make bg images blurry about the current era
+5. randomize correct answer location
+6. videos of old stuff
+7. refine  Q&A
 
 
 
