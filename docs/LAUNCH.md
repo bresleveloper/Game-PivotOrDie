@@ -145,7 +145,7 @@ git init
 git add .
 git commit -m "Initial commit: Pivot or Die game"
 git branch -M main
-git remote add origin https://github.com/yourusername/PivotOrDie.git
+git remote add origin https://github.com/bresleveloper/Game-PivotOrDie.git
 git push -u origin main
 
 # Enable GitHub Pages in repo settings

@@ -10,7 +10,7 @@ created with claude
 
 1. scroll down and click "Start your Journey"
 2. each era read prologue, answer why industry is closing, and choose a pivot.
-3. [play it here](TBD)
+3. [play it here](https://bresleveloper.github.io/Game-PivotOrDie/)
 
 
 
