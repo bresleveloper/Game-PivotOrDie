@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play - Pivot or Die</title>
+  <meta name="description" content="Play Pivot or Die - Experience 250 years of technological disruption">
+  <link rel="icon" type="image/png" href="./assets/icon.png">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="play-page">
+  <div class="container">
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+      <div class="progress-text" id="progressText">Era 1 of 13</div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="game-screen">
+      <!-- Era Introduction -->
+      <section id="eraIntro" class="screen active">
+        <div class="era-header">
+          <span class="year" id="eraYear">1780</span>
+          <h1 class="era-name" id="eraName">Pre-Industrial Village</h1>
+        </div>
+        <div class="scenario">
+          <p id="eraDescription" class="description"></p>
+          <p id="eraDisruption" class="disruption"></p>
+        </div>
+        <div class="wealth-display">
+          <span class="wealth-label">Current Wealth:</span>
+          <span class="wealth-value" id="currentWealth">$1,000</span>
+        </div>
+        <button class="btn btn-primary" onclick="game.showQuiz()">Continue</button>
+      </section>
+
+      <!-- Quiz Section -->
+      <section id="quizSection" class="screen">
+        <div class="quiz-container">
+          <h2 class="quiz-question" id="quizQuestion"></h2>
+          <div class="quiz-answers" id="quizAnswers"></div>
+          <div id="quizFeedback" class="quiz-feedback"></div>
+        </div>
+      </section>
+
+      <!-- Pivot Selection -->
+      <section id="pivotSection" class="screen">
+        <div class="pivot-container">
+          <h2>Choose Your Pivot</h2>
+          <p class="pivot-instruction">Pick a new business direction. Each choice has different wealth potential and job impact.</p>
+          <div class="pivot-options" id="pivotOptions"></div>
+        </div>
+      </section>
+
+      <!-- Era Summary -->
+      <section id="eraSummary" class="screen">
+        <div class="summary-container">
+          <h2>Era Complete</h2>
+          <div class="summary-stats">
+            <div class="summary-stat">
+              <span class="stat-icon">💰</span>
+              <div>
+                <div class="stat-label">Wealth Gained</div>
+                <div class="stat-value" id="wealthGained">+$0</div>
+              </div>
+            </div>
+            <div class="summary-stat">
+              <span class="stat-icon">📈</span>
+              <div>
+                <div class="stat-label">Jobs Created</div>
+                <div class="stat-value positive" id="jobsCreated">0</div>
+              </div>
+            </div>
+            <div class="summary-stat">
+              <span class="stat-icon">📉</span>
+              <div>
+                <div class="stat-label">Jobs Lost</div>
+                <div class="stat-value negative" id="jobsLost">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="historical-fact">
+            <h3>Historical Context</h3>
+            <p id="historicalFact"></p>
+          </div>
+          <button class="btn btn-primary" onclick="game.nextEra()">Continue to Next Era</button>
+        </div>
+      </section>
+
+      <!-- Final Summary -->
+      <section id="finalSummary" class="screen">
+        <div class="final-container">
+          <h1 class="final-title">Journey Complete!</h1>
+          <div class="final-wealth">
+            <span class="final-wealth-label">Final Wealth</span>
+            <span class="final-wealth-value" id="finalWealth">$0</span>
+          </div>
+
+          <div class="final-stats-grid">
+            <div class="final-stat">
+              <span class="final-stat-number" id="totalJobsCreated">0</span>
+              <span class="final-stat-label">Total Jobs Created</span>
+            </div>
+            <div class="final-stat">
+              <span class="final-stat-number" id="totalJobsLost">0</span>
+              <span class="final-stat-label">Total Jobs Lost</span>
+            </div>
+            <div class="final-stat">
+              <span class="final-stat-number" id="correctAnswers">0</span>
+              <span class="final-stat-label">Correct Answers</span>
+            </div>
+          </div>
+
+          <div class="timeline-section">
+            <h2>Your Journey Through Time</h2>
+            <div class="timeline" id="timeline"></div>
+          </div>
+
+          <div class="share-section">
+            <h3>Share Your Results</h3>
+            <p id="shareText" class="share-text"></p>
+            <div class="share-buttons">
+              <button class="btn btn-secondary" onclick="game.shareTwitter()">Share on Twitter</button>
+              <button class="btn btn-secondary" onclick="game.copyResults()">Copy Results</button>
+            </div>
+          </div>
+
+          <div class="final-actions">
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            <button class="btn btn-primary" onclick="game.restart()">Play Again</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

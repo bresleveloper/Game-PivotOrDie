@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\Users\\Ariel\\source\\PivotOrDie\")",
+      "Bash(find:*)",
+      "Bash(node -e:*)",
+      "Bash(tree:*)",
+      "Bash(node -p:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

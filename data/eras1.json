@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "year": 1780,
+    "eraName": "Pre-Industrial Village",
+    "description": "You are a skilled hand-weaver in rural England, 1780. Most villagers farm or raise sheep, but you’ve built a reputation for fine linen and wool cloth. You own two looms in your cottage, employ three apprentices, and sell at the weekly market. Life is modest but stable — until whispers of ‘steam looms’ reach the village…",
+    "disruption": "Steam-powered factories are opening in Manchester and Leeds…",
+    "question": "Why are your customers suddenly buying cheaper cloth?",
+    "answers": [
+      "A new fashion banned colorful cloth",
+      "Power looms produce fabric 20× faster than human hands",
+      "The king raised taxes on hand-made goods",
+      "Wool suddenly became poisonous"
+    ],
+    "correct": 1,
+    "fact": "Between 1780 and 1810, British handloom weavers fell from ~250,000 to under 10,000.",
+    "pivots": [
+      { "name": "Textile machine maintenance shop", "wealth": 5800, "jobsCreated": 22, "jobsLost": 48 },
+      { "name": "Steam boiler & parts supplier", "wealth": 7200, "jobsCreated": 30, "jobsLost": 40 },
+      { "name": "Railway construction contractor", "wealth": 9800, "jobsCreated": 45, "jobsLost": 32 }
+    ]
+  },
+  {
+    "id": 2,
+    "year": 1890,
+    "eraName": "Electrification Begins",
+    "description": "You now run a successful gas-lamp manufacturing and street-lighting business in London. Your factory employs 180 workers producing lamps and mantles. Electric bulbs are still expensive toys for the rich — until Edison and Swan perfect them…",
+    "disruption": "Electric lighting is sweeping cities overnight…",
+    "question": "Why did cities stop buying your gas lamps?",
+    "answers": [
+      "A gas shortage hit Britain",
+      "Electric bulbs are brighter, safer, and cheaper to run",
+      "People decided darkness is healthier",
+      "Gas lamps were outlawed for being too beautiful"
+    ],
+    "correct": 1,
+    "fact": "By 1910, gas lighting jobs in the U.S. dropped 90%. Ice delivery collapsed with electric refrigerators.",
+    "pivots": [
+      { "name": "Electrical wiring & installation", "wealth": 14000, "jobsCreated": 65, "jobsLost": 160 },
+      { "name": "Power plant construction", "wealth": 22000, "jobsCreated": 110, "jobsLost": 140 },
+      { "name": "Early appliance sales & repair", "wealth": 16800, "jobsCreated": 80, "jobsLost": 130 }
+    ]
+  },
+  {
+    "id": 3,
+    "year": 1900,
+    "eraName": "Age of the Automobile",
+    "description": "Your family owns the largest livery stable, carriage works, and hay dealership in a growing Midwestern town. You shoe 200 horses a week and rent carriages to doctors and merchants — until Ford’s Model T rolls off the line…",
+    "disruption": "Cars no longer eat hay or need horseshoes…",
+    "question": "Why are your stables suddenly empty?",
+    "answers": [
+      "A horse plague killed all animals",
+      "Automobiles replaced horse transport",
+      "Everyone started walking for exercise",
+      "The town banned horses"
+    ],
+    "correct": 1,
+    "fact": "U.S. horse population: 25 million (1915) → under 3 million (1960).",
+    "pivots": [
+      { "name": "Gas station + auto repair garage", "wealth": 32000, "jobsCreated": 28, "jobsLost": 210 },
+      { "name": "Tire manufacturing & vulcanizing", "wealth": 41000, "jobsCreated": 45, "jobsLost": 180 },
+      { "name": "Roadside diner & motel chain", "wealth": 38000, "jobsCreated": 60, "jobsLost": 150 }
+    ]
+  },
+  {
+    "id": 4,
+    "year": 1980,
+    "eraName": "Personal Computers",
+    "description": "You run a chain of typing pools and secretarial colleges across the country. Businesses pay you to type documents and train typists — until IBM PCs and WordPerfect appear on every desk…",
+    "disruption": "Everyone is buying their own computers…",
+    "question": "Why did companies stop sending work to your typing pool?",
+    "answers": [
+      "Paper was banned",
+      "Word processors let anyone type and edit instantly",
+      "All secretaries retired at once",
+      "Keyboards were declared illegal"
+    ],
+    "correct": 1,
+    "fact": "Millions of dedicated typist jobs vanished in the 1980s–90s.",
+    "pivots": [
+      { "name": "PC sales & training centers", "wealth": 85000, "jobsCreated": 120, "jobsLost": 800 },
+      { "name": "Software consulting firm", "wealth": 110000, "jobsCreated": 95, "jobsLost": 720 },
+      { "name": "Data entry outsourcing", "wealth": 68000, "jobsCreated": 400, "jobsLost": 900 }
+    ]
+  },
+  {
+    "id": 5,
+    "year": 1985,
+    "eraName": "Office Software Revolution",
+    "description": "You own a successful accounting firm with 200 bookkeepers using ledgers and calculators…",
+    "disruption": "Microsoft Excel just launched…",
+    "question": "Why are your clients doing their own spreadsheets?",
+    "answers": [
+      "Calculators were outlawed",
+      "Excel automates weeks of work in minutes",
+      "Paper became too expensive",
+      "Accountants went on strike"
+    ],
+    "correct": 1,
+    "fact": "Manual bookkeeping jobs dropped ~70% in a decade.",
+    "pivots": [
+      { "name": "Excel training & template design", "wealth": 120000, "jobsCreated": 80, "jobsLost": 180 },
+      { "name": "Custom business software", "wealth": 180000, "jobsCreated": 110, "jobsLost": 160 },
+      { "name": "IT support for small firms", "wealth": 95000, "jobsCreated": 140, "jobsLost": 140 }
+    ]
+  },
+  {
+    "id": 6,
+    "year": 1995,
+    "eraName": "The Internet Arrives",
+    "description": "You own a chain of travel agencies and the Yellow Pages advertising empire in your region…",
+    "disruption": "People are booking flights on something called Expedia…",
+    "question": "Why did foot traffic to your agency drop 80%?",
+    "answers": [
+      "Airplanes were grounded",
+      "The internet lets anyone book online instantly",
+      "Everyone stopped traveling",
+      "Travel agents were banned"
+    ],
+    "correct": 1,
+    "fact": "Traditional travel agents: 250,000 (1995) → < 60,000 today.",
+    "pivots": [
+      { "name": "Web design agency", "wealth": 240000, "jobsCreated": 65, "jobsLost": 220 },
+      { "name": "Online travel comparison site", "wealth": 680000, "jobsCreated": 40, "jobsLost": 280 },
+      { "name": "Internet café chain", "wealth": 180000, "jobsCreated": 120, "jobsLost": 180 }
+    ]
+  },
+  {
+    "id": 7,
+    "year": 2007,
+    "eraName": "Smartphone Revolution",
+    "description": "You own camera shops, GPS stores, and a chain of Blockbuster video rentals…",
+    "disruption": "The iPhone just launched…",
+    "question": "Why are people no longer buying your products?",
+    "answers": [
+      "Everyone went blind",
+      "One device now replaces cameras, GPS, and video stores",
+      "Film photography came back",
+      "DVDs became immortal"
+    ],
+    "correct": 1,
+    "fact": "Blockbuster had 9,000 stores in 2004 → bankrupt by 2010.",
+    "pivots": [
+      { "name": "Mobile app development studio", "wealth": 920000, "jobsCreated": 85, "jobsLost": 420 },
+      { "name": "App Store optimization agency", "wealth": 760000, "jobsCreated": 60, "jobsLost": 380 },
+      { "name": "Uber-style local service apps", "wealth": 1400000, "jobsCreated": 200, "jobsLost": 500 }
+    ]
+  },
+  {
+    "id": 8,
+    "year": 2010,
+    "eraName": "Cloud Computing",
+    "description": "You run a successful data-center and server-hosting company for enterprises…",
+    "disruption": "Amazon Web Services is eating your lunch…",
+    "question": "Why are companies shutting down their server rooms?",
+    "answers": [
+      "Electricity became free",
+      "Cloud makes servers instant and 90% cheaper",
+      "Hardware was banned",
+      "Companies stopped using the internet"
+    ],
+    "correct": 1,
+    "fact": "On-premise server market shrank >60% in a decade.",
+    "pivots": [
+      { "name": "AWS consulting & migration", "wealth": 2800000, "jobsCreated": 140, "jobsLost": 320 },
+      { "name": "DevOps agency", "wealth": 3400000, "jobsCreated": 180, "jobsLost": 280 },
+      { "name": "SaaS product studio", "wealth": 4200000, "jobsCreated": 95, "jobsLost": 260 }
+    ]
+  },
+  {
+    "id": 9,
+    "year": 2020,
+    "eraName": "Generative AI Explosion",
+    "description": "You built a 500-person digital agency: designers, copywriters, React developers, and junior programmers…",
+    "disruption": "ChatGPT, Midjourney, and Claude just went viral…",
+    "question": "Why did 80% of your clients cancel contracts overnight?",
+    "answers": [
+      "They all became monks",
+      "AI generates text, images, and code instantly",
+      "Design was outlawed",
+      "Clients won the lottery"
+    ],
+    "correct": 1,
+    "fact": "By 2025, AI tools eliminated millions of routine creative and coding jobs.",
+    "pivots": [
+      { "name": "AI prompt engineering agency", "wealth": 8400000, "jobsCreated": 45, "jobsLost": 455 },
+      { "name": "Custom AI agent builder", "wealth": 12800000, "jobsCreated": 60, "jobsLost": 420 },
+      { "name": "AI verification & ethics studio", "wealth": 9600000, "jobsCreated": 80, "jobsLost": 380 }
+    ]
+  },
+  {
+    "id": 10,
+    "year": 2030,
+    "eraName": "AI-Native World (projected)",
+    "description": "You now run a successful AI agency with 60 brilliant prompt engineers and agent builders. Your clients are huge corporations — until fully autonomous AI companies appear…",
+    "disruption": "AI agents now start and run entire companies without humans…",
+    "question": "Why did your last human client just fire you?",
+    "answers": [
+      "Humans were banned from business",
+      "Autonomous AI corporations outcompete human-led firms",
+      "Money was abolished",
+      "AI decided to retire"
+    ],
+    "correct": 1,
+    "fact": "Projections: by 2035, >50% of Fortune 500 may be AI-native with <10 human employees.",
+    "pivots": [
+      { "name": "Robotaxi + drone delivery fleet", "wealth": 84000000, "jobsCreated": 800, "jobsLost": 2500 },
+      { "name": "Personal AI companion subscription", "wealth": 126000000, "jobsCreated": 400, "jobsLost": 1800 },
+      { "name": "Nuclear micro-reactor leasing for AI data centers", "wealth": 180000000, "jobsCreated": 1200, "jobsLost": 1200 }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+========================================
+  PIVOT OR DIE - QUICK START GUIDE
+========================================
+
+Welcome! Here's how to play the game:
+
+OPTION 1: Direct Browser Open (Easiest)
+----------------------------------------
+1. Double-click "index.html"
+2. Game opens in your default browser
+3. Click "Start Your Journey"
+4. Play through 13 eras of disruption!
+
+OPTION 2: Local Server (Better for testing)
+-------------------------------------------
+1. Open terminal/command prompt
+2. Navigate to this folder:
+   cd C:\Users\Ariel\source\PivotOrDie\gameV1
+
+3. Start a local server:
+
+   Python:
+   python -m http.server 8000
+
+   Node.js:
+   npx serve
+
+   PHP:
+   php -S localhost:8000
+
+4. Open browser to: http://localhost:8000
+5. Click "Start Your Journey"
+
+WHAT TO EXPECT
+--------------
+- 13 historical eras (1780-2030)
+- Quiz questions about disruption
+- Strategic business pivot choices
+- Track wealth, jobs created/lost
+- 15-20 minute playtime
+- Educational and fun!
+
+FILES TO OPEN
+-------------
+- index.html  = Home page (start here)
+- play.html   = Game page (auto-loads from home)
+- about.html  = Educational content
+
+DOCUMENTATION
+-------------
+- README.md    = Full documentation
+- TESTING.md   = Testing checklist
+- LAUNCH.md    = Deployment guide
+
+REQUIREMENTS
+------------
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- JavaScript enabled
+- No internet required (works offline)
+- No installation needed
+
+TECHNICAL DETAILS
+-----------------
+- Size: 97 KB total
+- Zero dependencies
+- Pure HTML5 + CSS3 + Vanilla JavaScript
+- Mobile-friendly responsive design
+
+HAVING ISSUES?
+--------------
+1. Make sure JavaScript is enabled
+2. Use a modern browser (2020+)
+3. Check console for errors (F12 → Console)
+4. Try local server instead of file://
+
+EDUCATIONAL USE
+---------------
+Perfect for:
+- Economics classes
+- History courses
+- Business programs
+- Self-directed learning
+- Ages 14+
+
+Ready? Open index.html and start your journey!
+
+Can you survive 250 years of disruption?
+
+========================================

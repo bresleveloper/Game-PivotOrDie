@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0e27"/>
+
+  <!-- Gradient circles for neon effect -->
+  <circle cx="200" cy="315" r="300" fill="url(#grad1)" opacity="0.1"/>
+  <circle cx="1000" cy="500" r="250" fill="url(#grad2)" opacity="0.1"/>
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff9d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff9d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="120" font-weight="bold" text-anchor="middle" fill="url(#titleGrad)">
+    Pivot or Die
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#b0b8d4">
+    250 Years of Technological Disruption
+  </text>
+
+  <!-- Timeline visualization -->
+  <line x1="150" y1="400" x2="1050" y2="400" stroke="#00ff9d" stroke-width="3" opacity="0.3"/>
+
+  <!-- Timeline points -->
+  <circle cx="200" cy="400" r="8" fill="#00ff9d"/>
+  <text x="200" y="440" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#00ff9d">1780</text>
+
+  <circle cx="450" cy="400" r="8" fill="#00ff9d"/>
+  <text x="450" y="440" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#00ff9d">1900</text>
+
+  <circle cx="700" cy="400" r="8" fill="#00d4ff"/>
+  <text x="700" y="440" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#00d4ff">1995</text>
+
+  <circle cx="950" cy="400" r="8" fill="#ff006e"/>
+  <text x="950" y="440" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#ff006e">2020</text>
+
+  <!-- Stats -->
+  <text x="300" y="520" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#00ff9d">13 Eras</text>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#00d4ff">Educational</text>
+  <text x="900" y="520" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#ff006e">Zero Deps</text>
+</svg>

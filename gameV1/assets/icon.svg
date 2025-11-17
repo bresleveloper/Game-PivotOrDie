@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" fill="#0a0e27" rx="12"/>
+
+  <!-- Circular arrows representing pivot/change -->
+  <g stroke="#00ff9d" stroke-width="3" fill="none">
+    <path d="M 32 12 A 15 15 0 1 1 32 42" stroke-linecap="round"/>
+    <path d="M 32 22 L 37 12 L 27 12 Z" fill="#00ff9d"/>
+  </g>
+
+  <g stroke="#ff006e" stroke-width="3" fill="none">
+    <path d="M 32 52 A 15 15 0 1 1 32 22" stroke-linecap="round"/>
+    <path d="M 32 42 L 37 52 L 27 52 Z" fill="#ff006e"/>
+  </g>
+
+  <!-- Central spark/star -->
+  <circle cx="32" cy="32" r="3" fill="#00d4ff"/>
+</svg>
