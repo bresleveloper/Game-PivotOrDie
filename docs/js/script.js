@@ -143,6 +143,7 @@ class PivotOrDieGame {
     era.pivots.forEach((pivot, index) => {
       const card = document.createElement('div');
       card.className = 'pivot-card';
+      card.onclick = () => this.selectPivot(index);
       card.innerHTML = `
         <h3 class="pivot-name">${pivot.name}</h3>
         <div class="pivot-stats">
@@ -159,9 +160,6 @@ class PivotOrDieGame {
             <span class="pivot-stat-value negative">-${pivot.jobsLost.toLocaleString()}</span>
           </div>
         </div>
-        <button class="btn btn-primary btn-select" onclick="game.selectPivot(${index})">
-          Select This Pivot
-        </button>
       `;
       pivotsContainer.appendChild(card);
     });

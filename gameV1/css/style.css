@@ -37,12 +37,12 @@
 
   /* Typography */
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.5rem;
-  --font-size-xxl: 2rem;
-  --font-size-xxxl: 3rem;
+  --font-size-sm: 1.175rem;
+  --font-size-base: 1.6rem;
+  --font-size-lg: 1.8rem;
+  --font-size-xl: 2.0rem;
+  --font-size-xxl: 2.4rem;
+  --font-size-xxxl: 2.8rem;
 
   --font-weight-normal: 400;
   --font-weight-medium: 500;
@@ -104,7 +104,7 @@ body {
    ======================================== */
 
 .container {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   padding: var(--space-md);
 }
@@ -332,7 +332,6 @@ a:hover {
    ======================================== */
 
 .game-screen {
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -539,6 +538,7 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   transition: all var(--transition-base);
+  cursor: pointer;
 }
 
 .pivot-card:hover {
@@ -590,6 +590,31 @@ a:hover {
 
 .pivot-stat-value.negative {
   color: var(--color-error);
+}
+
+.pivot-sources {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-text-dim);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.pivot-sources-label {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-dim);
+  margin-right: var(--space-xs);
+}
+
+.pivot-source-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.pivot-source-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 /* Era Summary */
@@ -654,6 +679,32 @@ a:hover {
 .historical-fact p {
   color: var(--color-text-secondary);
   margin-bottom: 0;
+}
+
+.fact-sources {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+}
+
+.sources-label {
+  color: var(--color-text-secondary);
+  margin-right: var(--space-xs);
+}
+
+.fact-source-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.fact-source-link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
+.source-separator {
+  color: var(--color-text-secondary);
+  margin: 0 var(--space-xs);
 }
 
 /* Final Summary */

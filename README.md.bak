@@ -24,14 +24,8 @@ created with claude
 5. randomize correct answer location
 6. videos of old stuff
 7. refine  Q&A
-8. add promotion about bresleveloper ai
 
 
-
-
-## run locally
-
-from `GameVx` folder `python -m http.server 8000`
 
 
 #### gits

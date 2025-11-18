@@ -3,9 +3,9 @@
     "id": 1,
     "year": 1780,
     "eraName": "Pre-Industrial Village",
-    "description": "You are a skilled hand-weaver in rural England, 1780. Most villagers farm or raise sheep, but you've built a reputation for fine linen and wool cloth. You own two looms in your cottage, employ three apprentices, and sell at the weekly market. Life is modest but stable — until whispers of 'steam looms' reach the village…",
+    "description": "You are a skilled hand-weaver in rural England, 1780. Most villagers farm or raise sheep, but you've built a reputation for fine linen and wool cloth. You work with two looms in your cottage, training three younger weavers, and sell your work at the weekly market. Life is modest but stable — until whispers of 'steam looms' reach the village…",
     "disruption": "Steam-powered factories are opening in Manchester and Leeds…",
-    "question": "Why are your customers suddenly buying cheaper cloth?",
+    "question": "Why are customers suddenly buying cheaper cloth (putting you out of work)?",
     "answers": [
       "A new fashion banned colorful cloth",
       "Power looms produce fabric 20× faster than human hands",
@@ -13,20 +13,53 @@
       "Wool suddenly became poisonous"
     ],
     "correct": 1,
-    "fact": "Between 1780 and 1810, British handloom weavers fell from ~250,000 to under 10,000.",
+    "fact": "British handloom weavers peaked at 240,000 in 1820. By 1835, they had plummeted to 60,000—losing two-thirds in just a decade. By 1861, only 7,000 remained as power looms took over.",
+    "factLinks": [
+      "https://www.cottontimes.co.uk/workers/"
+    ],
     "pivots": [
-      { "name": "Textile machine maintenance shop", "wealth": 5800, "jobsCreated": 22, "jobsLost": 48 },
-      { "name": "Steam boiler & parts supplier", "wealth": 7200, "jobsCreated": 30, "jobsLost": 40 },
-      { "name": "Railway construction contractor", "wealth": 9800, "jobsCreated": 45, "jobsLost": 32 }
+      {
+        "name": "Learn textile machine maintenance",
+        "wealth": 9300,
+        "jobsCreated": 150,
+        "jobsLost": 1200,
+        "sources": [
+          "https://history.pictures/2020/01/21/3-2-monetary-income-levels/",
+          "https://en.wikipedia.org/wiki/Power_loom",
+          "https://www.cottontimes.co.uk/workers/"
+        ]
+      },
+      {
+        "name": "Learn steam boiler operation & maintenance",
+        "wealth": 10200,
+        "jobsCreated": 2500,
+        "jobsLost": 500,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Steam_power_during_the_Industrial_Revolution",
+          "https://history.pictures/2020/01/21/3-2-monetary-income-levels/",
+          "https://spartacus-educational.com/CoalIndustry.htm"
+        ]
+      },
+      {
+        "name": "Get trained in canal construction",
+        "wealth": 8950,
+        "jobsCreated": 8000,
+        "jobsLost": 1500,
+        "sources": [
+          "https://en.wikipedia.org/wiki/Navvy",
+          "https://www.canalboat.co.uk/boats/construction-workers-who-built-the-canals-6272646/",
+          "https://www.pascalbonenfant.com/18c/wages.html"
+        ]
+      }
     ]
   },
   {
     "id": 2,
     "year": 1890,
     "eraName": "Electrification Begins",
-    "description": "You now run a successful gas-lamp manufacturing and street-lighting business in London. Your factory employs 180 workers producing lamps and mantles. Electric bulbs are still expensive toys for the rich — until Edison and Swan perfect them…",
+    "description": "You work at a successful gas-lamp manufacturing and street-lighting company in London. The factory employs 180 workers producing lamps and mantles. Electric bulbs are still expensive toys for the rich — until Edison and Swan perfect them…",
     "disruption": "Electric lighting is sweeping cities overnight…",
-    "question": "Why did cities stop buying your gas lamps?",
+    "question": "Why did cities stop buying gas lamps (threatening your job)?",
     "answers": [
       "A gas shortage hit Britain",
       "Electric bulbs are brighter, safer, and cheaper to run",
@@ -34,20 +67,54 @@
       "Gas lamps were outlawed for being too beautiful"
     ],
     "correct": 1,
-    "fact": "By 1910, gas lighting jobs in the U.S. dropped 90%. Ice delivery collapsed with electric refrigerators.",
+    "fact": "By 1910, electric bulbs replaced gas lighting. Ice delivery jobs vanished by the early 1950s as electric refrigerators became standard—64% of homes had them by 1940, 80% by 1951.",
+    "factLinks": [
+      "https://americanhistory.si.edu/explore/stories/keeping-your-food-cool-ice-harvesting-electric-refrigeration",
+      "https://www.optica-opn.org/home/articles/volume_19/issue_9/features/a_brief_history_of_lighting/"
+    ],
     "pivots": [
-      { "name": "Electrical wiring & installation", "wealth": 14000, "jobsCreated": 65, "jobsLost": 160 },
-      { "name": "Power plant construction", "wealth": 22000, "jobsCreated": 110, "jobsLost": 140 },
-      { "name": "Early appliance sales & repair", "wealth": 16800, "jobsCreated": 80, "jobsLost": 130 }
+      {
+        "name": "Learn electrical wiring & installation",
+        "wealth": 58900,
+        "jobsCreated": 15000,
+        "jobsLost": 8000,
+        "sources": [
+          "https://libraryguides.missouri.edu/pricesandwages/1900-1909",
+          "https://ecmag.com/section/your-business/brief-history-electricity",
+          "https://www.census.gov/library/publications/1903/dec/wages.html"
+        ]
+      },
+      {
+        "name": "Get trained in power plant construction",
+        "wealth": 44800,
+        "jobsCreated": 25000,
+        "jobsLost": 3000,
+        "sources": [
+          "https://www.powermag.com/history-of-power-the-evolution-of-the-electric-generation-industry/",
+          "https://libraryguides.missouri.edu/pricesandwages/1900-1909",
+          "https://www.construction-physics.com/p/the-birth-of-the-grid"
+        ]
+      },
+      {
+        "name": "Learn appliance sales & repair",
+        "wealth": 41800,
+        "jobsCreated": 12000,
+        "jobsLost": 50000,
+        "sources": [
+          "https://www.pbs.org/wgbh/aso/databank/entries/dt20ap.html",
+          "https://en.wikipedia.org/wiki/Ice_trade",
+          "https://americanhistory.si.edu/explore/stories/keeping-your-food-cool-ice-harvesting-electric-refrigeration"
+        ]
+      }
     ]
   },
   {
     "id": 3,
     "year": 1900,
     "eraName": "Age of the Automobile",
-    "description": "Your family owns the largest livery stable, carriage works, and hay dealership in a growing Midwestern town. You shoe 200 horses a week and rent carriages to doctors and merchants — until Ford's Model T rolls off the line…",
+    "description": "You work at the largest livery stable, carriage works, and hay dealership in a growing Midwestern town. You help shoe 200 horses a week and maintain carriages for doctors and merchants — until Ford's Model T rolls off the line…",
     "disruption": "Cars no longer eat hay or need horseshoes…",
-    "question": "Why are your stables suddenly empty?",
+    "question": "Why are the stables suddenly empty (putting you out of work)?",
     "answers": [
       "A horse plague killed all animals",
       "Automobiles replaced horse transport",
@@ -55,20 +122,54 @@
       "The town banned horses"
     ],
     "correct": 1,
-    "fact": "U.S. horse population: 25 million (1915) → under 3 million (1960).",
+    "fact": "U.S. horse population: 26.5 million (1915) → 3 million (1960).",
+    "factLinks": [
+      "https://www.americanequestrian.com/pdf/US-Equine-Demographics.pdf",
+      "https://en.wikipedia.org/wiki/Horses_in_the_United_States"
+    ],
     "pivots": [
-      { "name": "Gas station + auto repair garage", "wealth": 32000, "jobsCreated": 28, "jobsLost": 210 },
-      { "name": "Tire manufacturing & vulcanizing", "wealth": 41000, "jobsCreated": 45, "jobsLost": 180 },
-      { "name": "Roadside diner & motel chain", "wealth": 38000, "jobsCreated": 60, "jobsLost": 150 }
+      {
+        "name": "Learn auto repair & mechanics",
+        "wealth": 66500,
+        "jobsCreated": 75000,
+        "jobsLost": 105000,
+        "sources": [
+          "https://www.thehenryford.org/collections-and-research/digital-collections/expert-sets/7138",
+          "https://conversableeconomist.blogspot.com/2019/04/when-did-blacksmiths-disappear.html",
+          "https://blogs.microsoft.com/today-in-tech/day-horse-lost-job/"
+        ]
+      },
+      {
+        "name": "Get trained in tire manufacturing",
+        "wealth": 47250,
+        "jobsCreated": 100000,
+        "jobsLost": 15000,
+        "sources": [
+          "https://fraser.stlouisfed.org/title/wage-chronology-firestone-tire-rubber-co-bf-goodrich-co-akron-plants-rubber-workers-4908",
+          "https://en.wikipedia.org/wiki/Goodyear_Tire_and_Rubber_Company",
+          "https://libraryguides.missouri.edu/pricesandwages/1920-1929"
+        ]
+      },
+      {
+        "name": "Take a course in hospitality management",
+        "wealth": 81700,
+        "jobsCreated": 150000,
+        "jobsLost": 25000,
+        "sources": [
+          "https://guides.loc.gov/hospitality-restaurants-hotels/history",
+          "https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/hotels-and-hotel-industry",
+          "https://libraryguides.missouri.edu/pricesandwages/1920-1929"
+        ]
+      }
     ]
   },
   {
     "id": 4,
     "year": 1980,
     "eraName": "Personal Computers",
-    "description": "You run a chain of typing pools and secretarial colleges across the country. Businesses pay you to type documents and train typists — until IBM PCs and WordPerfect appear on every desk…",
+    "description": "You work at a typing pool and secretarial college. Businesses pay the company to type documents and train typists — until IBM PCs and WordPerfect appear on every desk…",
     "disruption": "Everyone is buying their own computers…",
-    "question": "Why did companies stop sending work to your typing pool?",
+    "question": "Why did companies stop sending work to the typing pool (threatening your livelihood)?",
     "answers": [
       "Paper was banned",
       "Word processors let anyone type and edit instantly",
@@ -76,20 +177,54 @@
       "Keyboards were declared illegal"
     ],
     "correct": 1,
-    "fact": "Millions of dedicated typist jobs vanished in the 1980s–90s.",
+    "fact": "Secretaries, typists, and administrative assistants declined from 12.7% of all jobs in 1980 to 6.8% in 2022.",
+    "factLinks": [
+      "https://forklightning.substack.com/p/the-past-present-and-future-of-office",
+      "https://www.thecgo.org/benchmark/the-rise-and-fall-of-the-female-typist/"
+    ],
     "pivots": [
-      { "name": "PC sales & training centers", "wealth": 85000, "jobsCreated": 120, "jobsLost": 800 },
-      { "name": "Software consulting firm", "wealth": 110000, "jobsCreated": 95, "jobsLost": 720 },
-      { "name": "Data entry outsourcing", "wealth": 68000, "jobsCreated": 400, "jobsLost": 900 }
+      {
+        "name": "Take a course in PC sales & training",
+        "wealth": 770000,
+        "jobsCreated": 250000,
+        "jobsLost": 150000,
+        "sources": [
+          "https://libraryguides.missouri.edu/pricesandwages/1980-1989",
+          "https://www.washingtonpost.com/archive/business/1981/12/20/jobs-growth-in-80s-linked-to-computer/a93ec635-24f7-4bfe-b18d-adfb7e39105c/",
+          "https://www.bls.gov/opub/mlr/1985/10/rpt1full.pdf"
+        ]
+      },
+      {
+        "name": "Go back to university and learn software engineering",
+        "wealth": 2100000,
+        "jobsCreated": 500000,
+        "jobsLost": 100000,
+        "sources": [
+          "https://www.obecto.com/the-evolution-of-the-software-engineer-salary/",
+          "https://smartasset.com/retirement/the-rise-of-the-software-engineer",
+          "https://en.wikipedia.org/wiki/History_of_software_engineering"
+        ]
+      },
+      {
+        "name": "Learn data entry & office software",
+        "wealth": 630000,
+        "jobsCreated": 300000,
+        "jobsLost": 869000,
+        "sources": [
+          "https://forklightning.substack.com/p/the-past-present-and-future-of-office",
+          "https://libraryguides.missouri.edu/pricesandwages/1980-1989",
+          "https://www.mckinsey.com/featured-insights/future-of-work/what-can-history-teach-us-about-technology-and-jobs"
+        ]
+      }
     ]
   },
   {
     "id": 5,
     "year": 1985,
     "eraName": "Office Software Revolution",
-    "description": "You own a successful accounting firm with 200 bookkeepers using ledgers and calculators…",
+    "description": "You work in a successful accounting firm with 200 bookkeepers using ledgers and calculators…",
     "disruption": "Microsoft Excel just launched…",
-    "question": "Why are your clients doing their own spreadsheets?",
+    "question": "Why are the clients doing their own spreadsheets (causing you to lose your job)?",
     "answers": [
       "Calculators were outlawed",
       "Excel automates weeks of work in minutes",
@@ -97,41 +232,108 @@
       "Accountants went on strike"
     ],
     "correct": 1,
-    "fact": "Manual bookkeeping jobs dropped ~70% in a decade.",
+    "fact": "Manual bookkeeping jobs dropped significantly in the 1980s-90s as spreadsheet software like Lotus 1-2-3 (1983) and Excel automated tasks.",
+    "factLinks": [
+      "https://www.sunshinevalleyaccounting.com/post/how-bookkeeping-has-changed",
+      "https://online.maryville.edu/blog/history-of-accounting/"
+    ],
     "pivots": [
-      { "name": "Excel training & template design", "wealth": 120000, "jobsCreated": 80, "jobsLost": 180 },
-      { "name": "Custom business software", "wealth": 180000, "jobsCreated": 110, "jobsLost": 160 },
-      { "name": "IT support for small firms", "wealth": 95000, "jobsCreated": 140, "jobsLost": 140 }
+      {
+        "name": "Take a course in Excel training & template design",
+        "wealth": 1487500,
+        "jobsCreated": 75000,
+        "jobsLost": 250000,
+        "sources": [
+          "https://dev.to/copyleftdev/ai-is-just-another-excel-what-the-spreadsheet-revolution-teaches-us-about-the-future-of-work-59cl",
+          "https://www.npr.org/2015/02/27/389585340/how-the-electronic-spreadsheet-revolutionized-business",
+          "https://www.technologyreview.com/2013/06/12/178008/how-technology-is-destroying-jobs/"
+        ]
+      },
+      {
+        "name": "Go back to university and learn software engineering",
+        "wealth": 2450000,
+        "jobsCreated": 600000,
+        "jobsLost": 80000,
+        "sources": [
+          "https://www.obecto.com/the-evolution-of-the-software-engineer-salary/",
+          "https://www.bls.gov/opub/mlr/2000/12/art1full.pdf",
+          "https://smartasset.com/retirement/the-rise-of-the-software-engineer"
+        ]
+      },
+      {
+        "name": "Get certified in IT support",
+        "wealth": 1277500,
+        "jobsCreated": 400000,
+        "jobsLost": 150000,
+        "sources": [
+          "https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm",
+          "https://www.census.gov/library/publications/2016/acs/acs-35.html",
+          "https://www.bls.gov/opub/ted/2001/jan/wk4/art03.htm"
+        ]
+      }
     ]
   },
   {
     "id": 6,
-    "year": 1995,
-    "eraName": "The Internet Arrives",
-    "description": "You own a chain of travel agencies and the Yellow Pages advertising empire in your region…",
-    "disruption": "People are booking flights on something called Expedia…",
-    "question": "Why did foot traffic to your agency drop 80%?",
+    "year": 1999,
+    "eraName": "Music Retail Revolution",
+    "description": "You work at a CD manufacturing plant that produces millions of discs every month. The factory runs three shifts, employs 280 workers, and business is booming — in 2000, 943 million CDs were sold in the United States, the highest ever. Then in June, a college student releases something called Napster…",
+    "disruption": "People are downloading music for free instead of buying CDs…",
+    "question": "Why did the factory shut down the production line (putting you out of work)?",
     "answers": [
-      "Airplanes were grounded",
-      "The internet lets anyone book online instantly",
-      "Everyone stopped traveling",
-      "Travel agents were banned"
+      "The government banned CDs",
+      "File-sharing let people download music for free, destroying CD sales",
+      "Plastic became illegal",
+      "Everyone stopped listening to music"
     ],
     "correct": 1,
-    "fact": "Traditional travel agents: 250,000 (1995) → < 60,000 today.",
+    "fact": "In 2000, 943 million CDs were sold in the United States, the highest figure ever reached. By 2016, annual units sold had been reduced by 90% to just 99 million CDs. In 2016, streaming service revenues represented 51% of total music sales in the United States.",
+    "factLinks": [
+      "https://www.thenewbarcelonapost.net/the-rise-and-fall-of-cd-sales-in-the-us/"
+    ],
     "pivots": [
-      { "name": "Web design agency", "wealth": 240000, "jobsCreated": 65, "jobsLost": 220 },
-      { "name": "Online travel comparison site", "wealth": 680000, "jobsCreated": 40, "jobsLost": 280 },
-      { "name": "Internet café chain", "wealth": 180000, "jobsCreated": 120, "jobsLost": 180 }
+      {
+        "name": "Get trained in IT & join a music streaming platform",
+        "wealth": 1890000,
+        "jobsCreated": 50000,
+        "jobsLost": 150000,
+        "sources": [
+          "https://pennyfractions.ghost.io/a-correct-history-of-music-streaming/",
+          "https://en.wikipedia.org/wiki/Pandora_(service)",
+          "https://www.digitalmusicnews.com/2012/08/25/recording/"
+        ]
+      },
+      {
+        "name": "Pivot to USB flash drive manufacturing",
+        "wealth": 787500,
+        "jobsCreated": 80000,
+        "jobsLost": 200000,
+        "sources": [
+          "https://www.bls.gov/opub/mlr/2018/beyond-bls/the-fall-of-employment-in-the-manufacturing-sector.htm",
+          "https://www.ibisworld.com/united-states/market-research-reports/recordable-media-manufacturing-industry/",
+          "https://money.cnn.com/2010/02/02/news/companies/napster_music_industry/"
+        ]
+      },
+      {
+        "name": "Take a course in web development",
+        "wealth": 1470000,
+        "jobsCreated": 400000,
+        "jobsLost": 50000,
+        "sources": [
+          "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm",
+          "https://www.bls.gov/opub/mlr/2000/12/art1full.pdf",
+          "https://kinsta.com/blog/web-developer-salary/"
+        ]
+      }
     ]
   },
   {
     "id": 7,
     "year": 2007,
     "eraName": "Smartphone Revolution",
-    "description": "You own camera shops, GPS stores, and a chain of Blockbuster video rentals…",
+    "description": "You work at a retail store selling cameras, GPS devices, and DVD rentals…",
     "disruption": "The iPhone just launched…",
-    "question": "Why are people no longer buying your products?",
+    "question": "Why are people no longer buying these products (putting you out of work)?",
     "answers": [
       "Everyone went blind",
       "One device now replaces cameras, GPS, and video stores",
@@ -140,19 +342,53 @@
     ],
     "correct": 1,
     "fact": "Blockbuster had 9,000 stores in 2004 → bankrupt by 2010.",
+    "factLinks": [
+      "https://en.wikipedia.org/wiki/Blockbuster_(retailer)",
+      "https://money.cnn.com/2010/09/23/news/companies/blockbuster_bankruptcy/index.htm"
+    ],
     "pivots": [
-      { "name": "Mobile app development studio", "wealth": 920000, "jobsCreated": 85, "jobsLost": 420 },
-      { "name": "App Store optimization agency", "wealth": 760000, "jobsCreated": 60, "jobsLost": 380 },
-      { "name": "Uber-style local service apps", "wealth": 1400000, "jobsCreated": 200, "jobsLost": 500 }
+      {
+        "name": "Go back to university and learn mobile app development",
+        "wealth": 1800000,
+        "jobsCreated": 600000,
+        "jobsLost": 300000,
+        "sources": [
+          "https://www.businessofapps.com/app-developers/research/ios-android-developer-salary/",
+          "https://en.wikipedia.org/wiki/Blockbuster_(retailer)",
+          "https://www.encyclopedia.com/economics/economics-magazines/industry-profiles-video-tape-rental-0"
+        ]
+      },
+      {
+        "name": "Take a course in App Store optimization & digital marketing",
+        "wealth": 1440000,
+        "jobsCreated": 400000,
+        "jobsLost": 250000,
+        "sources": [
+          "https://www.payscale.com/research/US/Job=Social_Media_Manager/Salary",
+          "https://en.wikipedia.org/wiki/Video_rental_shop",
+          "https://www.coursera.org/articles/social-media-marketing-salary"
+        ]
+      },
+      {
+        "name": "Go back to university and learn full-stack development",
+        "wealth": 1980000,
+        "jobsCreated": 700000,
+        "jobsLost": 200000,
+        "sources": [
+          "https://kinsta.com/blog/web-developer-salary/",
+          "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm",
+          "https://www.obecto.com/the-evolution-of-the-software-engineer-salary/"
+        ]
+      }
     ]
   },
   {
     "id": 8,
     "year": 2010,
     "eraName": "Cloud Computing",
-    "description": "You run a successful data-center and server-hosting company for enterprises…",
+    "description": "You work at a data-center and server-hosting company that serves enterprises…",
     "disruption": "Amazon Web Services is eating your lunch…",
-    "question": "Why are companies shutting down their server rooms?",
+    "question": "Why are companies shutting down their server rooms (threatening your job)?",
     "answers": [
       "Electricity became free",
       "Cloud makes servers instant and 90% cheaper",
@@ -160,20 +396,54 @@
       "Companies stopped using the internet"
     ],
     "correct": 1,
-    "fact": "On-premise server market shrank >60% in a decade.",
+    "fact": "On-premise server adoption dropped from 94.6% of companies (2010) to 45.6% (2019). By 2020, cloud spending surpassed on-premise for the first time.",
+    "factLinks": [
+      "https://www.hyve.com/insights/a-decade-in-the-cloud-2010-2020/",
+      "https://techcrunch.com/2021/03/19/cloud-infrastructure-spending-passed-on-prem-data-centers-in-2020/"
+    ],
     "pivots": [
-      { "name": "AWS consulting & migration", "wealth": 2800000, "jobsCreated": 140, "jobsLost": 320 },
-      { "name": "DevOps agency", "wealth": 3400000, "jobsCreated": 180, "jobsLost": 280 },
-      { "name": "SaaS product studio", "wealth": 4200000, "jobsCreated": 95, "jobsLost": 260 }
+      {
+        "name": "Get certified in AWS & cloud migration",
+        "wealth": 1800000,
+        "jobsCreated": 500000,
+        "jobsLost": 400000,
+        "sources": [
+          "https://www.coursera.org/articles/aws-devops-engineer-salary",
+          "https://www.hyve.com/insights/a-decade-in-the-cloud-2010-2020/",
+          "https://techcrunch.com/2021/03/19/cloud-infrastructure-spending-passed-on-prem-data-centers-in-2020/"
+        ]
+      },
+      {
+        "name": "Take a course in DevOps engineering",
+        "wealth": 1950000,
+        "jobsCreated": 600000,
+        "jobsLost": 350000,
+        "sources": [
+          "https://www.payscale.com/research/US/Job=Development_Operations_(DevOps)_Engineer/Salary",
+          "https://www.knowledgehut.com/blog/cloud-computing/aws-devops-salary",
+          "https://www.hyve.com/insights/a-decade-in-the-cloud-2010-2020/"
+        ]
+      },
+      {
+        "name": "Go back to university and learn software product development",
+        "wealth": 1725000,
+        "jobsCreated": 450000,
+        "jobsLost": 300000,
+        "sources": [
+          "https://smartasset.com/retirement/the-rise-of-the-software-engineer",
+          "https://www.obecto.com/the-evolution-of-the-software-engineer-salary/",
+          "https://techcrunch.com/2021/03/19/cloud-infrastructure-spending-passed-on-prem-data-centers-in-2020/"
+        ]
+      }
     ]
   },
   {
     "id": 9,
     "year": 2012,
     "eraName": "Social Media Dominance",
-    "description": "Your advertising empire spans traditional media: newspapers, magazines, billboards, and TV ads. You employ 300 sales reps, designers, and media buyers serving major brands — until Facebook Ads and Twitter ads prove they can micro-target any audience for pennies on the dollar…",
+    "description": "You work at an advertising company that spans traditional media: newspapers, magazines, billboards, and TV ads. The company employs 300 sales reps, designers, and media buyers serving major brands — until Facebook Ads and Twitter ads prove they can micro-target any audience for pennies on the dollar…",
     "disruption": "Social media platforms are taking all ad budgets…",
-    "question": "Why did your biggest clients cut their print and TV ad spending by 70%?",
+    "question": "Why did the biggest clients cut their print and TV ad spending by 70% (threatening your job)?",
     "answers": [
       "Magazines became illegal",
       "Social media ads are cheaper, measurable, and targeted",
@@ -182,40 +452,109 @@
     ],
     "correct": 1,
     "fact": "U.S. newspaper ad revenue fell from $50B (2005) to under $10B (2020). Print journalism jobs dropped 60%.",
+    "factLinks": [
+      "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "https://www.marketingcharts.com/cross-media-and-traditional/newspapers-traditional-and-cross-channel-231522",
+      "https://www.pewresearch.org/short-reads/2021/07/13/u-s-newsroom-employment-has-fallen-26-since-2008/"
+    ],
     "pivots": [
-      { "name": "Social media marketing agency", "wealth": 5200000, "jobsCreated": 150, "jobsLost": 280 },
-      { "name": "Influencer management platform", "wealth": 7800000, "jobsCreated": 95, "jobsLost": 250 },
-      { "name": "Content creator studio", "wealth": 6400000, "jobsCreated": 180, "jobsLost": 220 }
+      {
+        "name": "Take a course in social media marketing",
+        "wealth": 975000,
+        "jobsCreated": 500000,
+        "jobsLost": 450000,
+        "sources": [
+          "https://www.coursera.org/articles/social-media-marketing-salary",
+          "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+          "https://www.pewresearch.org/short-reads/2021/07/13/u-s-newsroom-employment-has-fallen-26-since-2008/"
+        ]
+      },
+      {
+        "name": "Learn influencer marketing & platform management",
+        "wealth": 1235000,
+        "jobsCreated": 400000,
+        "jobsLost": 350000,
+        "sources": [
+          "https://www.demandsage.com/how-much-do-influencers-make/",
+          "https://www.payscale.com/research/US/Job=Social_Media_Manager/Salary",
+          "https://www.marketingcharts.com/cross-media-and-traditional/newspapers-traditional-and-cross-channel-231522"
+        ]
+      },
+      {
+        "name": "Take a course in content creation & digital media",
+        "wealth": 1105000,
+        "jobsCreated": 550000,
+        "jobsLost": 400000,
+        "sources": [
+          "https://podcastle.ai/blog/how-much-do-influencers-make/",
+          "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+          "https://www.coursera.org/articles/social-media-marketing-salary"
+        ]
+      }
     ]
   },
   {
     "id": 10,
     "year": 2016,
     "eraName": "Gig Economy Explosion",
-    "description": "You own a successful taxi dispatch company and a network of delivery drivers with scheduled routes. You've invested millions in fleet vehicles, radio systems, and employee benefits — until Uber, Lyft, and DoorDash turn every smartphone owner into a driver…",
-    "disruption": "Apps are replacing your entire workforce with freelancers…",
-    "question": "Why did your drivers quit to work for apps?",
+    "description": "You work at a taxi dispatch company with a network of delivery drivers on scheduled routes. The company has invested millions in fleet vehicles, radio systems, and employee benefits — until Uber, Lyft, and DoorDash turn every smartphone owner into a driver…",
+    "disruption": "Apps are replacing the entire workforce with freelancers…",
+    "question": "Why did company drivers quit to work for apps (putting you out of work)?",
     "answers": [
-      "Your uniforms were uncomfortable",
+      "The uniforms were uncomfortable",
       "Gig platforms offer flexible schedules and instant payment",
       "Driving was banned",
       "Everyone bought their own helicopters"
     ],
     "correct": 1,
-    "fact": "Traditional taxi medallion values crashed from $1M+ to under $200K. Over 10M people now work gig jobs globally.",
+    "fact": "NYC taxi medallion values crashed from $1M (2014) to $150K then $80K (2021) due to rideshare apps. By 2020, 23M new gig workers joined in the U.S. alone.",
+    "factLinks": [
+      "https://documentedny.com/2021/11/23/taxi-cab-medallion-explained/",
+      "https://www.demandsage.com/gig-economy-statistics/"
+    ],
     "pivots": [
-      { "name": "Gig worker platform for local services", "wealth": 18000000, "jobsCreated": 2500, "jobsLost": 400 },
-      { "name": "Fleet management software for gig economy", "wealth": 24000000, "jobsCreated": 120, "jobsLost": 380 },
-      { "name": "Insurance & benefits for gig workers", "wealth": 32000000, "jobsCreated": 200, "jobsLost": 350 }
+      {
+        "name": "Go back to university and learn platform development",
+        "wealth": 18000000,
+        "jobsCreated": 2500,
+        "jobsLost": 400,
+        "sources": [
+          "https://www.mckinsey.com/featured-insights/employment-and-growth/independent-work-choice-necessity-and-the-gig-economy",
+          "https://www.brookings.edu/articles/tracking-the-gig-economy-new-numbers/",
+          "https://journalistsresource.org/economics/airbnb-lyft-uber-bike-share-sharing-economy-research-roundup/"
+        ]
+      },
+      {
+        "name": "Learn fleet management software development",
+        "wealth": 24000000,
+        "jobsCreated": 120,
+        "jobsLost": 380,
+        "sources": [
+          "https://www.fortunebusinessinsights.com/industry-reports/fleet-management-software-market-100893",
+          "https://www.mordorintelligence.com/industry-reports/global-fleet-management-software-market-industry",
+          "https://www.marketsandmarkets.com/Market-Reports/fleet-management-systems-market-1020.html"
+        ]
+      },
+      {
+        "name": "Get certified in insurance & benefits consulting",
+        "wealth": 32000000,
+        "jobsCreated": 200,
+        "jobsLost": 350,
+        "sources": [
+          "https://www.rgare.com/knowledge-center/article/the-gig-economy-its-workers-and-group-benefits",
+          "https://www.brookings.edu/articles/how-should-we-provide-benefits-to-gig-workers/",
+          "https://jointhebrokers.com/blog/educational/adapting-insurance-for-gig-workers/"
+        ]
+      }
     ]
   },
   {
     "id": 11,
     "year": 2020,
     "eraName": "Generative AI Explosion",
-    "description": "You built a 500-person digital agency: designers, copywriters, React developers, and junior programmers…",
+    "description": "You work at a 500-person digital agency: designers, copywriters, React developers, and junior programmers…",
     "disruption": "ChatGPT, Midjourney, and Claude just went viral…",
-    "question": "Why did 80% of your clients cancel contracts overnight?",
+    "question": "Why did 80% of clients cancel contracts overnight (putting you out of work)?",
     "answers": [
       "They all became monks",
       "AI generates text, images, and code instantly",
@@ -223,20 +562,54 @@
       "Clients won the lottery"
     ],
     "correct": 1,
-    "fact": "By 2025, AI tools eliminated millions of routine creative and coding jobs.",
+    "fact": "By 2025, over 25% of computer programming jobs vanished in two years. AI-related automation displaced 2.1M jobs globally. Basic copywriting gigs dropped 36% since 2023.",
+    "factLinks": [
+      "https://www.washingtonpost.com/business/2025/03/14/programming-jobs-lost-artificial-intelligence/",
+      "https://www.aiprm.com/ai-replacing-jobs-statistics/"
+    ],
     "pivots": [
-      { "name": "AI prompt engineering agency", "wealth": 48000000, "jobsCreated": 45, "jobsLost": 455 },
-      { "name": "Custom AI agent builder", "wealth": 72000000, "jobsCreated": 60, "jobsLost": 420 },
-      { "name": "AI verification & ethics studio", "wealth": 58000000, "jobsCreated": 80, "jobsLost": 380 }
+      {
+        "name": "Take a course in AI prompt engineering",
+        "wealth": 48000000,
+        "jobsCreated": 45,
+        "jobsLost": 455,
+        "sources": [
+          "https://www.coursera.org/articles/prompt-engineering-salary",
+          "https://www.refontelearning.com/salary-guide/prompt-engineering-salary-guide-2025",
+          "https://arxiv.org/html/2506.00058v1"
+        ]
+      },
+      {
+        "name": "Go back to university and learn AI engineering",
+        "wealth": 72000000,
+        "jobsCreated": 60,
+        "jobsLost": 420,
+        "sources": [
+          "https://www.bls.gov/opub/ted/2025/ai-impacts-in-bls-employment-projections.htm",
+          "https://fortune.com/2025/07/27/artificial-intelligence-skills-18000-salaries-28-percent/",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0927537121000373"
+        ]
+      },
+      {
+        "name": "Take a course in AI ethics & verification",
+        "wealth": 58000000,
+        "jobsCreated": 80,
+        "jobsLost": 380,
+        "sources": [
+          "https://techjacksolutions.com/ai-governance-careers/",
+          "https://www.deloitte.com/us/en/services/audit-assurance/blogs/accounting-finance/audit-ai-risk-management.html",
+          "https://www.accenture.com/us-en/services/data-ai/responsible-ai"
+        ]
+      }
     ]
   },
   {
     "id": 12,
     "year": 2025,
     "eraName": "Autonomous Everything",
-    "description": "Your AI prompt engineering agency thrives with 45 specialists helping Fortune 500 companies deploy chatbots, image generators, and code assistants. Revenue is strong — until autonomous AI agents that write their own prompts, debug themselves, and negotiate contracts start replacing your entire service…",
+    "description": "You work at an AI agency with 45 specialists helping Fortune 500 companies deploy chatbots, image generators, and code assistants. Revenue is strong — until autonomous AI agents that write their own prompts, debug themselves, and negotiate contracts start replacing the entire service…",
     "disruption": "Self-improving AI agents are making human AI specialists obsolete…",
-    "question": "Why are your clients no longer renewing contracts?",
+    "question": "Why are clients no longer renewing contracts (threatening your job)?",
     "answers": [
       "AI became sentient and quit",
       "Autonomous agents now handle all AI tasks without human input",
@@ -244,20 +617,54 @@
       "Prompt engineering became illegal"
     ],
     "correct": 1,
-    "fact": "2025: Early autonomous agents manage end-to-end business processes. Job displacement accelerates across white-collar work.",
+    "fact": "In 2025, 25% of gen AI companies launched agentic AI pilots. However, fewer than 5% of enterprise applications deployed real autonomous agents as most remain at early maturity levels.",
+    "factLinks": [
+      "https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality",
+      "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html"
+    ],
     "pivots": [
-      { "name": "AI safety & alignment consulting", "wealth": 140000000, "jobsCreated": 180, "jobsLost": 900 },
-      { "name": "Human-AI collaboration tools", "wealth": 180000000, "jobsCreated": 250, "jobsLost": 800 },
-      { "name": "Personal AI life-management subscriptions", "wealth": 220000000, "jobsCreated": 120, "jobsLost": 700 }
+      {
+        "name": "Go back to university and learn AI safety & alignment",
+        "wealth": 140000000,
+        "jobsCreated": 180,
+        "jobsLost": 900,
+        "sources": [
+          "https://80000hours.org/career-reviews/ai-safety-researcher/",
+          "https://futureoflife.org/2015/10/12/11m-ai-safety-research-program-launched",
+          "https://ai-frontiers.org/articles/ai-displacement-insurance"
+        ]
+      },
+      {
+        "name": "Learn human-AI interaction design",
+        "wealth": 180000000,
+        "jobsCreated": 250,
+        "jobsLost": 800,
+        "sources": [
+          "https://hai.stanford.edu/news/human-centered-ai-boundaries-between-ux-and-software-roles-are-evolving",
+          "https://www.secondtalent.com/occupations/human-ai-interaction-designer/",
+          "https://www.microsoft.com/en-us/research/blog/guidelines-for-human-ai-interaction-design/"
+        ]
+      },
+      {
+        "name": "Take a course in AI product management",
+        "wealth": 220000000,
+        "jobsCreated": 120,
+        "jobsLost": 700,
+        "sources": [
+          "https://aakashgupta.medium.com/what-is-an-ai-product-manager-and-why-theyre-making-300k-while-regular-pms-get-laid-off-2c0ba0811008",
+          "https://www.gartner.com/en/documents/6295815",
+          "https://www.refontelearning.com/blog/how-to-become-ai-product-manager-in-2025"
+        ]
+      }
     ]
   },
   {
     "id": 13,
     "year": 2030,
     "eraName": "AI-Native World (projected)",
-    "description": "You now run a successful AI safety consulting firm with 180 specialists ensuring AI systems align with human values. Your clients are governments and mega-corporations — until fully autonomous AI companies appear that don't need human oversight…",
+    "description": "You work at an AI safety consulting firm with 180 specialists ensuring AI systems align with human values. The clients are governments and mega-corporations — until fully autonomous AI companies appear that don't need human oversight…",
     "disruption": "AI agents now start and run entire companies without humans…",
-    "question": "Why did your last human client just fire you?",
+    "question": "Why did the last human client just fire the company (putting you out of work)?",
     "answers": [
       "Humans were banned from business",
       "Autonomous AI corporations outcompete human-led firms",
@@ -265,11 +672,45 @@
       "AI decided to retire"
     ],
     "correct": 1,
-    "fact": "Projections: by 2035, >50% of Fortune 500 may be AI-native with <10 human employees.",
+    "fact": "Projections: The 2030s will see unprecedented disruption of Fortune 500 companies, replaced by AI-native firms. AI could add $7.39 trillion to the global economy by 2035.",
+    "factLinks": [
+      "https://fortune.com/2025/07/01/silicon-valley-investor-vinod-khosla-ai-job-prediction-interview/",
+      "https://eluminoustechnologies.com/blog/artificial-intelligence-statistics/"
+    ],
     "pivots": [
-      { "name": "Robotaxi + drone delivery fleet", "wealth": 480000000, "jobsCreated": 800, "jobsLost": 2500 },
-      { "name": "Personal AI companion subscription", "wealth": 720000000, "jobsCreated": 400, "jobsLost": 1800 },
-      { "name": "Nuclear micro-reactor leasing for AI data centers", "wealth": 1000000000, "jobsCreated": 1200, "jobsLost": 1200 }
+      {
+        "name": "Get trained in robotics & autonomous systems management",
+        "wealth": 480000000,
+        "jobsCreated": 800,
+        "jobsLost": 2500,
+        "sources": [
+          "https://resources.oxfordeconomics.com/how-robots-change-the-world",
+          "https://www.marketsandmarkets.com/Market-Reports/future-robotics-56928872.html",
+          "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/"
+        ]
+      },
+      {
+        "name": "Learn AI companion design & ethics",
+        "wealth": 720000000,
+        "jobsCreated": 400,
+        "jobsLost": 1800,
+        "sources": [
+          "https://www.imarcgroup.com/social-robots-market",
+          "https://www.mordorintelligence.com/industry-reports/social-robots-market",
+          "https://market.us/press-release/ai-companion-robots-market/"
+        ]
+      },
+      {
+        "name": "Go back to university and learn nuclear engineering",
+        "wealth": 1000000000,
+        "jobsCreated": 1200,
+        "jobsLost": 1200,
+        "sources": [
+          "https://www.gatech.edu/news/2025/01/10/ais-energy-demands-spark-nuclear-revival",
+          "https://www.goldmansachs.com/insights/articles/is-nuclear-energy-the-answer-to-ai-data-centers-power-consumption",
+          "https://www.deloitte.com/us/en/insights/industry/power-and-utilities/nuclear-energy-powering-data-centers.html"
+        ]
+      }
     ]
   }
 ]
