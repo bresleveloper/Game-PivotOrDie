@@ -36,11 +36,30 @@ class PivotOrDieGame {
   }
 
   /**
-   * Start the game with first era
+   * Start the game with first era (or skip to specified era via query param)
    */
   startGame() {
-    this.currentEraIndex = 0;
-    this.wealth = 1000;
+    // Check for era query parameter (e.g., ?era=6)
+    const urlParams = new URLSearchParams(window.location.search);
+    const skipToEra = urlParams.get('era');
+
+    if (skipToEra) {
+      const eraNumber = parseInt(skipToEra, 10);
+      // Validate era number (1-based, so convert to 0-based index)
+      if (eraNumber >= 1 && eraNumber <= this.eras.length) {
+        this.currentEraIndex = eraNumber - 1; // Convert to 0-based index
+        // Set wealth to a reasonable amount for testing
+        this.wealth = 1000 * Math.pow(10, this.currentEraIndex);
+      } else {
+        console.warn(`Invalid era number: ${skipToEra}. Starting from era 1.`);
+        this.currentEraIndex = 0;
+        this.wealth = 1000;
+      }
+    } else {
+      this.currentEraIndex = 0;
+      this.wealth = 1000;
+    }
+
     this.totalJobsCreated = 0;
     this.totalJobsLost = 0;
     this.correctAnswersCount = 0;
@@ -99,36 +118,39 @@ class PivotOrDieGame {
    * Check quiz answer
    */
   checkAnswer(selectedIndex) {
-    if (this.quizAnswered) return;
-
     const era = this.eras[this.currentEraIndex];
     const isCorrect = selectedIndex === era.correct;
-    const feedback = document.getElementById('quizFeedback');
     const answers = document.querySelectorAll('.quiz-answer');
+    const feedback = document.getElementById('quizFeedback');
 
-    // Mark answer as selected
-    answers[selectedIndex].classList.add(isCorrect ? 'correct' : 'incorrect');
+    if (isCorrect) {
+      // Correct answer - proceed to pivot selection
+      if (!this.quizAnswered) {
+        this.correctAnswersCount++;
+        this.quizAnswered = true;
+      }
 
-    // Show correct answer if wrong
-    if (!isCorrect) {
-      answers[era.correct].classList.add('correct');
+      // Mark as correct
+      answers[selectedIndex].classList.add('correct');
+
+      // Disable all buttons
+      answers.forEach(btn => btn.disabled = true);
+
+      // Clear any feedback
+      feedback.innerHTML = '';
+
+      // Proceed directly to pivot selection
+      this.showPivots();
     } else {
-      this.correctAnswersCount++;
+      // Wrong answer - mark it red but don't show correct answer
+      answers[selectedIndex].classList.add('incorrect');
+      answers[selectedIndex].disabled = true; // Disable only the wrong answer
+
+      // Clear feedback to ensure no button appears
+      feedback.innerHTML = '';
+
+      // Don't show feedback, don't reveal correct answer, let user try again
     }
-
-    // Disable all buttons
-    answers.forEach(btn => btn.disabled = true);
-
-    // Show feedback
-    feedback.innerHTML = `
-      <div class="feedback-content ${isCorrect ? 'feedback-correct' : 'feedback-incorrect'}">
-        <p class="feedback-title">${isCorrect ? 'Correct!' : 'Not quite.'}</p>
-        <p class="feedback-fact">${era.fact}</p>
-        <button class="btn btn-primary" onclick="game.showPivots()">Choose Your Pivot</button>
-      </div>
-    `;
-
-    this.quizAnswered = true;
   }
 
   /**
@@ -144,6 +166,20 @@ class PivotOrDieGame {
       const card = document.createElement('div');
       card.className = 'pivot-card';
       card.onclick = () => this.selectPivot(index);
+
+      // Build sources HTML if available
+      let sourcesHTML = '';
+      if (pivot.sources && pivot.sources.length > 0) {
+        const sourceLinks = pivot.sources.map((link, idx) =>
+          `<a href="${link}" target="_blank" rel="noopener noreferrer" class="pivot-source-link" onclick="event.stopPropagation()">Source ${idx + 1}</a>`
+        ).join(' | ');
+        sourcesHTML = `
+          <div class="pivot-sources">
+            <span class="pivot-sources-label">Sources:</span> ${sourceLinks}
+          </div>
+        `;
+      }
+
       card.innerHTML = `
         <h3 class="pivot-name">${pivot.name}</h3>
         <div class="pivot-stats">
@@ -160,6 +196,7 @@ class PivotOrDieGame {
             <span class="pivot-stat-value negative">-${pivot.jobsLost.toLocaleString()}</span>
           </div>
         </div>
+        ${sourcesHTML}
       `;
       pivotsContainer.appendChild(card);
     });
@@ -205,6 +242,35 @@ class PivotOrDieGame {
     document.getElementById('jobsCreated').textContent = '+' + pivot.jobsCreated.toLocaleString();
     document.getElementById('jobsLost').textContent = '-' + pivot.jobsLost.toLocaleString();
     document.getElementById('historicalFact').textContent = era.fact;
+
+    // Handle multiple fact sources
+    const sourcesContainer = document.getElementById('factSources');
+    sourcesContainer.innerHTML = ''; // Clear previous sources
+
+    if (era.factLinks && era.factLinks.length > 0) {
+      const sourcesLabel = document.createElement('span');
+      sourcesLabel.textContent = 'Sources: ';
+      sourcesLabel.className = 'sources-label';
+      sourcesContainer.appendChild(sourcesLabel);
+
+      era.factLinks.forEach((link, index) => {
+        const sourceLink = document.createElement('a');
+        sourceLink.href = link;
+        sourceLink.textContent = `Source ${index + 1}`;
+        sourceLink.target = '_blank';
+        sourceLink.rel = 'noopener noreferrer';
+        sourceLink.className = 'fact-source-link';
+        sourcesContainer.appendChild(sourceLink);
+
+        // Add separator between links (except after the last one)
+        if (index < era.factLinks.length - 1) {
+          const separator = document.createElement('span');
+          separator.textContent = ' | ';
+          separator.className = 'source-separator';
+          sourcesContainer.appendChild(separator);
+        }
+      });
+    }
 
     this.showScreen('eraSummary');
   }
